@@ -1,0 +1,129 @@
+:root {
+    --primary-color: #2b0b3d;
+    --bg-light: #f5f5f5;
+    --text-color: #333;
+    --border-color: #e0e0e0;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Quicksand', sans-serif;
+}
+
+body {
+    background-color: var(--bg-light);
+    overflow: hidden;
+}
+
+/* --- HEADER --- */
+.navbar {
+    background-color: var(--primary-color);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 25px;
+    height: 70px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.logo h1 {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.star { color: #f9d71c; }
+
+.user-profile {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.user-info {
+    text-align: right;
+}
+
+.user-name {
+    display: block;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.user-role {
+    font-size: 0.75rem;
+    opacity: 0.7;
+}
+
+.avatar {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    border: 2px solid #5a3275;
+    background-color: #87ceeb;
+}
+
+.logout-btn {
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    margin-left: 10px;
+    opacity: 0.8;
+    transition: 0.3s;
+}
+
+.logout-btn:hover { opacity: 1; }
+
+/* --- WRAPPER & SIDEBAR --- */
+.wrapper {
+    display: flex;
+    margin-top: 70px;
+    height: calc(100vh - 70px);
+}
+
+.sidebar {
+    width: 240px;
+    background-color: white;
+    border-right: 1px solid var(--border-color);
+}
+
+.sidebar ul {
+    list-style: none;
+}
+
+.sidebar li {
+    border-bottom: 1px solid var(--border-color);
+}
+
+.sidebar li a {
+    display: block;
+    padding: 15px 25px;
+    text-decoration: none;
+    color: #555;
+    font-size: 0.95rem;
+    font-weight: 500;
+    transition: 0.2s;
+}
+
+.sidebar li:hover a {
+    background-color: #f9f9f9;
+}
+
+.sidebar li.active a {
+    color: var(--text-color);
+    font-weight: 700;
+    background-color: #fcfcfc;
+}
+
+/* --- MAIN CONTENT --- */
+.main-content {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto;
+}
