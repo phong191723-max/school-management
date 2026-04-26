@@ -1,0 +1,134 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Quicksand', sans-serif;
+}
+
+body {
+    background-color: #f0f2f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.login-container {
+    display: flex;
+    width: 850px;
+    height: 500px;
+    background-color: #fff;
+    border-radius: 40px;
+    overflow: hidden;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+}
+
+/* --- PHẦN BÊN TRÁI --- */
+.left-side {
+    flex: 1;
+    background-color: #3b145a;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 0 80px 80px 0;
+    z-index: 2;
+}
+
+.left-side h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.star { color: #f9d71c; }
+
+.illustration img {
+    width: 150px;
+    margin-bottom: 20px;
+    filter: brightness(0) invert(1);
+}
+
+/* --- PHẦN BÊN PHẢI --- */
+.right-side {
+    flex: 1.2;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    padding: 40px;
+}
+
+.form-box { width: 100%; }
+
+.form-box h2 {
+    font-size: 2rem;
+    color: #333;
+}
+
+.subtitle {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.input-group { margin-bottom: 20px; }
+
+.input-group label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1.5px solid #ddd;
+    border-radius: 10px;
+    outline: none;
+}
+
+.password-wrapper { position: relative; }
+.toggle-password {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.options {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.85rem;
+    margin-bottom: 25px;
+}
+
+.forgot-pass {
+    color: #9c27b0;
+    text-decoration: none;
+}
+
+.btn-login {
+    width: 100%;
+    padding: 14px;
+    background-color: #4b1a70;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-login:hover {
+    background-color: #3b145a;
+    box-shadow: 0 5px 15px rgba(59, 20, 90, 0.3);
+}
+.error {
+    color: red;
+    font-size: 13px;
+    margin-top: 5px;
+}
