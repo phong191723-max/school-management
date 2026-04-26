@@ -140,15 +140,15 @@ document.getElementById("loginForm").addEventListener("submit", function(e) {
 
         // redirect
         if (user.role === "giaovien") {
-            window.location.href = "../DB_GV.html";
+            window.location.href = "../Dashboard/DB_GV.html";
         } else if (user.role === "bgh") {
-            window.location.href = "../DB_BGH.html";
+            window.location.href = "../Dashboard/DB_BGH.html";
         } else if (user.role === "admin") {
-            window.location.href = "../DB_Admin.html";
+            window.location.href = "../Dashboard/DB_Admin.html";
         } else if (user.role === "taivu") {
-            window.location.href = "../DB_TV.html";
+            window.location.href = "../Dashboard/DB_TV.html";
         } else if (user.role === "phuhuynh") {
-            window.location.href = "../DB_PH.html";
+            window.location.href = "../Dashboard/DB_PH.html";
         }
     } else {
         document.getElementById("passError").textContent = "Sai email hoặc mật khẩu!";
